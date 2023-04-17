@@ -1,8 +1,19 @@
 {
   "todos": [
     {
-      "content": "sdsd",
+      "content": "Eat breakfast",
+      "complete": true,
       "id": 1
+    },
+    {
+      "content": "Make lunch",
+      "complete": false,
+      "id": 2
+    },
+    {
+      "content": "Goto gym",
+      "complete": false,
+      "id": 3
     }
   ]
 }

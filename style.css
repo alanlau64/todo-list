@@ -1,43 +1,131 @@
-.app{
+.app {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
-  border-radius: 5px;
   width: fit-content;
-  padding:10px;
+  padding: 10px;
   text-align: center;
-  gap:10px;
+  gap: 10px;
   align-items: stretch;
-
+  width: 800px;
+  align-items: center;
 }
 
-html{
+html {
   display: flex;
   justify-content: center;
 }
 
-.form{
+.form {
   display: flex;
   flex-direction: row;
-  gap:10px;
+  gap: 10px;
 }
 
-.todo-list{
-  padding:0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  gap:10px;
+.submit-btn {
+  background-color: #008cba;
+  color: white;
 }
 
-.todo-list li{
+.lists {
   display: flex;
   justify-content: space-between;
 }
-.todo-list li span{
+
+.list {
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  text-align: left;
+  min-height: 300px;
+  width: 350px;
+}
+
+.list-text {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.todo-list {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 10px;
+  float: left;
+  width: 300px;
+  align-items: center;
+}
+
+.done-list {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 10px;
+  float: left;
+  width: 300px;
+  align-items: center;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e6e2d3;
+  width: 300px;
+}
+
+.todo-list li span {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.done-list li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e6e2d3;
+  width: 300px;
+}
+
+.done-list li span {
   flex-grow: 1;
   text-align: center;
 }
 
 
+.func-btn {
+  align-content: center;
+  width: 22px;
+  height: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.func-btn svg {
+  margin-left: -3px;
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+}
+
+.edit-btn {
+  background-color: #008cba;
+}
+
+.delete-btn {
+  background-color: #c94c4c;
+}
+
+.done-btn {
+  background-color: #4acf50;
+  margin-right: 7px;
+}
+
+.undone-btn {
+  background-color: #4acf50;
+  margin-left: 7px;
+}
+
+.done-list .delete-btn {
+  margin-right: 7px;
+}
